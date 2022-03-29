@@ -1,4 +1,4 @@
-import React, { useState, FC, useEffect } from "react";
+import React, { useState, } from "react";
 import "./App.css";
 import BackgroundComponent from "./components/Background.component";
 import ClockComponent from "./components/Clock.component";

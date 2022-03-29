@@ -1,5 +1,5 @@
-import { isVisible } from "@testing-library/user-event/dist/utils";
-import React, { FC, useEffect, useState } from "react";
+
+import React, { FC} from "react";
 import styled from "styled-components";
 import image from "../Assets/Clock-Background.jpg";
 import image2 from "../Assets/Clock-Background2.jpg";

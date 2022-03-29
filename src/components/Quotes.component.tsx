@@ -1,7 +1,7 @@
 import React, { useEffect, FC, useState } from "react";
-import axios, { Axios } from "axios";
 import styled from "styled-components";
-import { isVisible } from "@testing-library/user-event/dist/utils";
+import axios from "axios";
+
 interface IQuote {
   isVisible: boolean;
 }
