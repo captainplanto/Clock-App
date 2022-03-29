@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, FC, useEffect } from "react";
+import "./App.css";
+import BackgroundComponent from "./components/Background.component";
+import ClockComponent from "./components/Clock.component";
+import SwitchComponent from "./components/Switch.component";
+import DateComponent from "./Date.component";
+import QuotesComponent from "./components/Quotes.component";
+const App = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SwitchComponent isVisible={isVisible} setIsVisible={setIsVisible} />
+      <QuotesComponent isVisible={isVisible} />
+      <ClockComponent isVisible={isVisible} />
+      <DateComponent isVisible={isVisible} />
+      <BackgroundComponent isVisible={isVisible} />
     </div>
   );
-}
+};
 
 export default App;
