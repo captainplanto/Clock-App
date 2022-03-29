@@ -3,7 +3,7 @@ import "./App.css";
 import BackgroundComponent from "./components/Background.component";
 import ClockComponent from "./components/Clock.component";
 import SwitchComponent from "./components/Switch.component";
-import DateComponent from "./Date.component";
+import DateComponent from "./components/Date.component";
 import QuotesComponent from "./components/Quotes.component";
 const App = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
