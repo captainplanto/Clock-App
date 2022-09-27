@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import styled from "styled-components";
+
 interface Istyle {
   style?: object;
   isVisible: boolean;

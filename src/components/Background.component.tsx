@@ -1,5 +1,4 @@
-
-import React, { FC} from "react";
+import React, {FC} from "react";
 import styled from "styled-components";
 import image from "../Assets/Clock-Background.jpg";
 import image2 from "../Assets/Clock-Background2.jpg";
@@ -35,6 +34,7 @@ const Background = styled.div<IClockComponent>`
     content: "";
     position: absolute;
     background-color: ${(props) => (props.isVisible ? "black" : "white")};
+    transition: background 4s ease;
     opacity: 0.6;
     z-index: 200;
   }
